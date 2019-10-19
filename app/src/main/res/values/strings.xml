@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Heisenberg</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="contacts">WhatsApp:8588989697\nEmail:yashgupta417@gmail.com
+    </string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF">
+    <TextView
+        android:id="@+id/c_name"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Contest Name"
+        android:textColor="@color/colorSecondary"
+        android:textSize="14sp"
+        />
+    <TextView
+        android:id="@+id/c_starting_time"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:text="Start time"
+        android:textColor="@color/colorSecondary"
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/c_end_time"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:text="End time"
+        android:textColor="@color/colorSecondary"
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/c_noOfQue"
+        android:layout_width="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Questions"
+        android:textColor="@color/colorSecondary"
+        android:textSize="14sp"/>
+</LinearLayout>

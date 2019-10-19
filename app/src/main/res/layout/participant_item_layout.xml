@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="10dp"
+    android:background="#FFF">
+    <TextView
+        android:id="@+id/p_rank"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Rank"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/p_username"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:text="Username"
+        android:textColor="#000"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/p_score"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Score"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"/>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/contests"
+        android:icon="@drawable/ic_contest"
+        android:title="Contests"/>
+    <item android:id="@+id/practice"
+        android:icon="@drawable/ic_practice"
+        android:title="Practice"/>
+    <item android:id="@+id/discover"
+        android:title="Discover"
+        android:icon="@drawable/ic_discover"/>
+    <item android:id="@+id/you"
+        android:icon="@drawable/ic_you"
+        android:title="You"/>
+
+</menu>

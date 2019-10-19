@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFF"
+    tools:context=".Fragments.YouFragment">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/you_refresh">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/you_parent"
+        android:orientation="vertical"
+>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp">
+     <LinearLayout
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="10dp"
+     >
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/you_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:maxHeight="200dp"
+                android:src="@drawable/defaultuser"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/you_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YashGupta"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="17sp"
+                />
+            <TextView
+                android:id="@+id/you_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" @yash"
+                android:textColor="@color/colorSecondary"
+                android:textSize="14sp"
+                android:layout_marginHorizontal="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contests:"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    />
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/you_contests"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1000"
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+           <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:layout_centerInParent="true"
+                android:background="@drawable/blue_back_button"
+                android:textColor="#0099FF"
+                android:textSize="14sp"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="3dp"
+                android:layout_marginTop="5dp"
+                />-->
+                <ImageView
+                    android:onClick="goToSettings"
+                    android:id="@+id/settings"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/ic_settings_" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+     </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_contests"/>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/you_loading"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/loadingb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
