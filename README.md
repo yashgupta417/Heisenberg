@@ -1,7 +1,6 @@
 # Heisenberg
 
 It is an android platform to participate in mathematical and logical contests
-
 which are organised by us on regular basis.
 
 
